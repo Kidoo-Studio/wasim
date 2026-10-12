@@ -67,12 +67,26 @@
         <div class="id-hang reveal" aria-label="Engineer ID card">
           <span class="lanyard"></span>
           <span class="clip"></span>
-          <div class="id-card">
-            <div class="id-top"><span>Engineer ID</span><span>Since 2021</span></div>
-            <img class="id-photo" src="assets/wasim-id.jpg" alt="Shaik Wasim Ahamed" width="720" height="900">
-            <strong>Shaik Wasim Ahamed</strong>
-            <em>AIOps Engineer</em>
-            <span class="barcode"></span>
+          <div class="id-flip" id="idFlip" tabindex="0" role="button" aria-pressed="false" aria-label="Flip the ID card to see what Wasim does off the clock">
+            <div class="id-card id-front">
+              <div class="id-top"><span>Engineer ID</span><span>Since 2021</span></div>
+              <img class="id-photo" src="assets/wasim-id.jpg" alt="Shaik Wasim Ahamed" width="720" height="900">
+              <strong>Shaik Wasim Ahamed</strong>
+              <em>AIOps Engineer</em>
+              <span class="barcode"></span>
+            </div>
+            <div class="id-card id-back">
+              <div class="id-top"><span>Flip side</span><span>Off the clock</span></div>
+              <p class="id-back-title">When I'm not shipping, <i>I'm…</i></p>
+              <ul class="hobbies">
+                <li><b aria-hidden="true">✦</b><span>Running LLMs on my own servers</span></li>
+                <li><b aria-hidden="true">◈</b><span>Vector database experiments</span></li>
+                <li><b aria-hidden="true">⬡</b><span>Automating tasks with n8n</span></li>
+                <li><b aria-hidden="true">❯</b><span>Tinkering with Linux</span></li>
+                <li><b aria-hidden="true">↗</b><span>Exploring new tech</span></li>
+              </ul>
+              <span class="barcode"></span>
+            </div>
           </div>
         </div>
         <dl class="facts reveal">

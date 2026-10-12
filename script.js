@@ -58,6 +58,14 @@
     reveals.forEach(function (el) { el.classList.add('in'); });
   }
 
+  // ID card: hover flips it in CSS; tap or Enter/Space toggles it for touch and keyboard
+  var idFlip = document.getElementById('idFlip');
+  function toggleFlip() { idFlip.setAttribute('aria-pressed', idFlip.classList.toggle('flipped')); }
+  idFlip.addEventListener('click', toggleFlip);
+  idFlip.addEventListener('keydown', function (e) {
+    if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); toggleFlip(); }
+  });
+
   // Project carousel
   var carousel = document.getElementById('carousel');
   function slide(dir) {
